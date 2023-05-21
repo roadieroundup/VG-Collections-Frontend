@@ -9,12 +9,8 @@ const logoVariants = {
 
 export const Loader = () => {
     return (
-        <Box
-            position="relative"
-            display="inline-flex"
-            
-        >
-            <CircularProgress size={150} thickness={1} color='error'/>
+        <Box position="relative" display="inline-flex">
+            <CircularProgress size={150} thickness={1} color="error" />
             <Box
                 top={0}
                 left={0}
@@ -26,7 +22,7 @@ export const Loader = () => {
                 justifyContent="center"
             >
                 <motion.img
-                    src="/JZLogo.svg"
+                    src="public/JZLogo.svg"
                     alt="Logo"
                     variants={logoVariants}
                     initial="initial"
@@ -35,7 +31,6 @@ export const Loader = () => {
                         width: '100px',
                     }}
                 />
-                
             </Box>
         </Box>
     );
