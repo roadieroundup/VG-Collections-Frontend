@@ -1,9 +1,10 @@
 import { IconButton } from '@mui/material';
+import logo from '../../../public/JZLogo.svg';
 
 export const JZIcon = props => {
     return (
         <IconButton {...props} disabled>
-            <img src="public/JZLogo.svg" alt="JZIcon" width={50} />
+            <img src={logo} alt="JZIcon" width={50} />
         </IconButton>
     );
 };

@@ -8,7 +8,7 @@ export const VGCApp = () => {
     
     return (
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename='VG-Collections-Frontend' >
                 <AppTheme>
                     <AppRouter />
                 </AppTheme>

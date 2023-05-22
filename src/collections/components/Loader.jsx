@@ -1,6 +1,6 @@
 import { Box, CircularProgress} from '@mui/material';
 import { motion } from 'framer-motion';
-// import logo from './your-logo.svg';
+import logo from '../../../public/JZLogo.svg';
 
 const logoVariants = {
     initial: { y: '-100vh' },
@@ -22,7 +22,7 @@ export const Loader = () => {
                 justifyContent="center"
             >
                 <motion.img
-                    src="public/JZLogo.svg"
+                    src={logo}
                     alt="Logo"
                     variants={logoVariants}
                     initial="initial"
